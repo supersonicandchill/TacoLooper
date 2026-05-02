@@ -197,14 +197,19 @@
 
 <main>
     <!-- File Picker -->
-    <div class="drop-zone" id="dropZone" onclick="document.getElementById('fileInput').click()">
+    <div class="drop-zone" id="dropZone" onclick="fileInput.click()">
         <div id="dzInner">
             <div class="dz-icon">📂</div>
             <div class="dz-label">Select Voice Memo</div>
             <div class="dz-sub">Tap to choose · drag & drop works too</div>
         </div>
     </div>
-    <input type="file" id="fileInput" accept="audio/*" style="display:none">
+   <input 
+    type="file" 
+    id="fileInput" 
+    accept="audio/*,video/*,.m4a,.mp3,.wav,.mov,.mp4" 
+    capture
+    style="display:none">
 
     <!-- Waveform -->
     <div class="wave-wrap" id="waveWrap">
