@@ -204,7 +204,18 @@
             <div class="dz-sub">Tap to choose · drag & drop works too</div>
         </div>
     </div>
- <input type="file" id="fileInput" accept="*/*" style="display:none">
+ <input
+    type="file"
+    id="fileInput"
+    accept="audio/*,video/*"
+    style="display:none">
+
+<input
+    type="file"
+    id="recordInput"
+    accept="audio/*"
+    capture="microphone"
+    style="display:none">
 
     <!-- Waveform -->
     <div class="wave-wrap" id="waveWrap">
